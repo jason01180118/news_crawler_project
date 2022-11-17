@@ -7,7 +7,7 @@ import sqlite3
 from findall import findall
 from record import record
 
-conn = sqlite3.connect('D:\\nlp_project_data\\esgnews\\mydb.db')
+conn = sqlite3.connect('D:\\nlp_project_data\\esgclarity\\mydb.db')
 cur = conn.cursor()
 cur.execute(
     "CREATE TABLE IF NOT EXISTS REPORTS ('title' TEXT,'subtitle' TEXT,'href' TEXT PRIMARY KEY,'text' TEXT,'ESGtag' TEXT,'othertag' TEXT,'time' TEXT)")

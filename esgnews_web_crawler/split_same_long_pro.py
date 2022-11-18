@@ -29,7 +29,6 @@ for data in datas:
     # lowercasing each token
     words = [token.lower() for token in words]
     # stemming
-    ways = ['port', 'lanc', 'snow']
     port = PorterStemmer()
     stemmed_port = [port.stem(token) for token in words]
 
@@ -38,19 +37,21 @@ for data in datas:
 
     snow = SnowballStemmer("english")
     stemmed_snow = [snow.stem(token) for token in words]
+    ways = [{'class': 'port', 'name': stemmed_port}, {'class': 'lanc',
+                                                      'name': stemmed_lanc}, {'class': 'snow', 'name': stemmed_snow}]
     for way in ways:
         conn = sqlite3.connect(
-            'D:\\nlp_project_data\\esgnews\\output_same_long_'+way+'.db')
+            'D:\\nlp_project_data\\esgnews\\output_same_long_'+way['class']+'.db')
         cur = conn.cursor()
         cur.execute(
             "CREATE TABLE IF NOT EXISTS OUTPUTS ('text' TEXT PRIMARY KEY,'ESGtag' TEXT)")
-        tags = nltk.pos_tag(data)
+        tags = nltk.pos_tag(way['name'])
         result = []
+
         lemmatiser = WordNetLemmatizer()
         for tag in tags:
             wordnet_pos = get_wordnet_pos(tag[1]) or wordnet.NOUN
             result.append(lemmatiser.lemmatize(tag[0], pos=wordnet_pos))
-
         # defining stopwords in English
         stop_words = set(stopwords.words("english"))
         # removing stop words

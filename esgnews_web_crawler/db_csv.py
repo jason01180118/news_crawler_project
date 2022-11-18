@@ -1,7 +1,8 @@
 import sqlite3
 import csv
 
-files = ['output', 'output_without_over', 'output_same_long']
+files = ['output', 'output_without_over', 'output_same_long',
+         'output_same_long_lanc', 'output_same_long_port', 'output_same_long_snow']
 for file in files:
     conn = sqlite3.connect('D:\\nlp_project_data\\esgnews\\'+file+'.db')
     cur = conn.cursor()

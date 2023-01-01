@@ -1,0 +1,124 @@
+{
+    "e": {
+        "Climate": [
+            "Carbon",
+            "climate",
+            "discharge",
+            "emission",
+            "fuel",
+            "greenhouse",
+            "gas",
+            "footprint",
+            "coal",
+            "sea-level",
+            "net-zero"
+        ],
+        "Natural capital": [
+            "Biodiversity",
+            "environmental",
+            "resource",
+            "land",
+            "water",
+            "ecosystem",
+            "natural",
+            "topsoil",
+            "soil",
+            "scarcity",
+            "over-fishing",
+            "desertification",
+            "extinction"
+        ],
+        "Pollution&Waste": [
+            "contamination",
+            "hazardous",
+            "pollution",
+            "toxic",
+            "waste",
+            "plastic",
+            "ecotoxicity",
+            "ecotoxic",
+            "acidification"
+        ],
+        "Env. Opportunities": [
+            "clean-up",
+            "clean",
+            "energy",
+            "remediation",
+            "sustainability",
+            "sustainable",
+            "cleantech",
+            "recycle",
+            "renewable",
+            "recycling",
+            "Biofuel"
+        ]
+    },
+    "s": {
+        "Human Capital": [
+            "employee",
+            "gender",
+            "labor",
+            "working",
+            "equality",
+            "relation",
+            "discrimination",
+            "racial",
+            "worker",
+            "workplace",
+            "overwork"
+        ],
+        "Product Liability": [
+            "customer",
+            "safety",
+            "privacy",
+            "product",
+            "disinformation",
+            "quality",
+            "consumers",
+            "protection",
+            "security"
+        ],
+        "Social Opportunities": [
+            "healthcare",
+            "Charity",
+            "poverty",
+            "help",
+            "opportunity",
+            "poor",
+            "community",
+            "contributions",
+            "society"
+        ]
+    },
+    "g": {
+        "Corporator Governance": [
+            "board",
+            "payment",
+            "wage",
+            "ownership",
+            "accounting",
+            "transparency",
+            "governance",
+            "corruption",
+            "compensation",
+            "stewardship",
+            "remuneration",
+            "executive",
+            "shareholder"
+        ],
+        "Corporator Behavior": [
+            "antitrust",
+            "ethic",
+            "lobbying",
+            "scandal",
+            "controversial",
+            "tax",
+            "competitive",
+            "business",
+            "misconduct",
+            "fraud",
+            "bribery",
+            "mis-selling"
+        ]
+    }
+}

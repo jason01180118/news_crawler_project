@@ -47,5 +47,8 @@ data_tags = pd.DataFrame(sentence_score.reshape(np.shape(sentence_score)[
                          1], np.shape(sentence_score)[0]), columns=tags)
 
 data = pd.merge(data_text, data_tags, left_index=True, right_index=True)
+
+#data.drop(data[(data == 0).astype(int).sum(axis=1) == 9].index, inplace=True)
+
 data.to_csv('D:\\nlp_project_data\\output_result_multiple.csv',
             encoding='utf-8', index=False)
